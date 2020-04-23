@@ -29,7 +29,7 @@ attr_reader :id
   end
 
   def save
-    sql = <<- SQL
+    sql = <<-SQL
     INSERT INTO students (name, grade)
       VALUES (?, ?)
 
@@ -42,7 +42,7 @@ attr_reader :id
       student = Student.new(name, grade)
       student.save
       student
-    end 
+    end
 
 
 end
